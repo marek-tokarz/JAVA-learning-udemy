@@ -15,8 +15,10 @@ public class Main{
       car.describeCar();
       */
 
-        Account bobsAccount = new Account(
-                "12345", 1000.00, "Bob Brown", "myemail@bob.com", "(087) 123-4567");
+       // Account bobsAccount = new Account(
+       //         "12345", 1000.00, "Bob Brown", "myemail@bob.com", "(087) 123-4567");
+
+        /*
         for(int i = 1; i <= 5; i++) {
             LPAStudent s = new LPAStudent("S92300" + i,
                     switch(i) {
@@ -37,6 +39,21 @@ public class Main{
         System.out.println(student.name() + " is taking " + student.classList());
 
         // record is immutable
+        */
+
+        Animal animal = new Animal("Generic Animal", "Huge", 400);
+        doAnimalStuff(animal, "slow");
+
+        Dog dog = new Dog();
+        doAnimalStuff(dog, "fast");
+    }
+
+    public static void doAnimalStuff(Animal animal, String speed) {
+
+        animal.makeNoise();
+        animal.move(speed);
+        System.out.println(animal);
+        System.out.println("_ _ _ _");
     }
 }
 
