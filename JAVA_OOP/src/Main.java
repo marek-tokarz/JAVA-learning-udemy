@@ -29,6 +29,14 @@ public class Main{
                     "Java Masterclass");
             System.out.println(s);
         }
+
+        LPAStudent student = new LPAStudent("S923007", "Bill", "05/11/1985", "Java Masterclass");
+
+        System.out.println(student);
+
+        System.out.println(student.name() + " is taking " + student.classList());
+
+        // record is immutable
     }
 }
 
