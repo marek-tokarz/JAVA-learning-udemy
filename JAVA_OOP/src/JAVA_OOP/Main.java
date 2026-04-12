@@ -1,8 +1,10 @@
+package JAVA_OOP;
+
 public class Main{
     public static void main(String[] args)
     {
       /*
-      Car car = new Car();
+      JAVA_OOP.Car car = new JAVA_OOP.Car();
 
       car.setMake("Porsche");
       car.setModel("Carrera");
@@ -15,12 +17,12 @@ public class Main{
       car.describeCar();
       */
 
-       // Account bobsAccount = new Account(
+       // JAVA_OOP.Account bobsAccount = new JAVA_OOP.Account(
        //         "12345", 1000.00, "Bob Brown", "myemail@bob.com", "(087) 123-4567");
 
         /*
         for(int i = 1; i <= 5; i++) {
-            LPAStudent s = new LPAStudent("S92300" + i,
+            JAVA_OOP.LPAStudent s = new JAVA_OOP.LPAStudent("S92300" + i,
                     switch(i) {
                         case 1 -> "Mary";
                         case 2 -> "Carol";
@@ -32,7 +34,7 @@ public class Main{
             System.out.println(s);
         }
 
-        LPAStudent student = new LPAStudent("S923007", "Bill", "05/11/1985", "Java Masterclass");
+        JAVA_OOP.LPAStudent student = new JAVA_OOP.LPAStudent("S923007", "Bill", "05/11/1985", "Java Masterclass");
 
         System.out.println(student);
 
@@ -41,21 +43,21 @@ public class Main{
         // record is immutable
 
 
-        Animal animal = new Animal("Generic Animal", "Huge", 400);
+        JAVA_OOP.Animal animal = new JAVA_OOP.Animal("Generic JAVA_OOP.Animal", "Huge", 400);
         doAnimalStuff(animal, "slow");
 
-        Dog dog = new Dog();
+        JAVA_OOP.Dog dog = new JAVA_OOP.Dog();
         doAnimalStuff(dog, "fast");
 
-        Dog yorkie = new Dog("Yorkie", 15);
+        JAVA_OOP.Dog yorkie = new JAVA_OOP.Dog("Yorkie", 15);
         doAnimalStuff(yorkie, "fast");
-        Dog retriever = new Dog("Labrador Retriever", 65, "Floppy", "Swimmer");
+        JAVA_OOP.Dog retriever = new JAVA_OOP.Dog("Labrador Retriever", 65, "Floppy", "Swimmer");
         doAnimalStuff(retriever, "slow");
 
-        Dog wolf = new Dog("Wolf", 40);
+        JAVA_OOP.Dog wolf = new JAVA_OOP.Dog("Wolf", 40);
         doAnimalStuff(wolf, "slow");
 
-        Fish goldie = new Fish("Goldfish", 0.25, 2, 3);
+        JAVA_OOP.Fish goldie = new JAVA_OOP.Fish("Goldfish", 0.25, 2, 3);
         doAnimalStuff(goldie, "fast");
 
 

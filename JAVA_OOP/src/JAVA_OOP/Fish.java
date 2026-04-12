@@ -1,3 +1,5 @@
+package JAVA_OOP;
+
 public class Fish extends Animal{
 
     private int gills;
@@ -29,7 +31,7 @@ public class Fish extends Animal{
 
     @Override
     public String toString() {
-        return "Fish{" +
+        return "JAVA_OOP.Fish{" +
                 "gills=" + gills +
                 ", fins=" + fins +
                 "} " + super.toString();

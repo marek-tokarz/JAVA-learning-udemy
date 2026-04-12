@@ -1,3 +1,5 @@
+package JAVA_OOP;
+
 public class Dog extends Animal{
 
     private String earShape;
@@ -18,7 +20,7 @@ public class Dog extends Animal{
 
     @Override
     public String toString() {
-        return "Dog{" +
+        return "JAVA_OOP.Dog{" +
                 "earShape='" + earShape + '\'' +
                 ", tailShape='" + tailShape + '\'' +
                 "} " + super.toString();
@@ -52,15 +54,15 @@ public class Dog extends Animal{
     }
 
     private void run() {
-        System.out.print("Dog Running ");
+        System.out.print("JAVA_OOP.Dog Running ");
     }
 
     private void walk() {
-        System.out.print("Dog Walking ");
+        System.out.print("JAVA_OOP.Dog Walking ");
     }
 
     private void wagTail() {
-        System.out.print("Dog Running ");
+        System.out.print("JAVA_OOP.Dog Running ");
     }
 
 }

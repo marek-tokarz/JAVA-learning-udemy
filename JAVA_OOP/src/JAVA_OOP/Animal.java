@@ -1,3 +1,5 @@
+package JAVA_OOP;
+
 public class Animal {
 
     protected String type;
@@ -15,7 +17,7 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "Animal{" +
+        return "JAVA_OOP.Animal{" +
                 "type='" + type + '\'' +
                 ", size='" + size + '\'' +
                 ", weight=" + weight +
