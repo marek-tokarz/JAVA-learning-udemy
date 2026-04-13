@@ -22,7 +22,7 @@ public class Printer {
         return tonerLevel;
     }
 
-    public int getPagesPrinted(int pages) {
+    public int printPages(int pages) {
         int jobPages = (duplex) ? (pages / 2) + (pages % 2) : pages;
         pagesPrinted += jobPages;
         return jobPages;
