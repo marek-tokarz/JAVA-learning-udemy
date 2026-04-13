@@ -82,7 +82,6 @@ public class Main {
             Movie movie = Movie.getMovie(type,title);
             movie.watchMovie();
         }
-    */
 
     Car car = new Car("2022 Blue Ferrari 296 GTS");
     runRace(car);
@@ -102,6 +101,17 @@ public class Main {
     public static void runRace(Car car) {
         car.startEngine();
         car.drive();
-    }
+ */
+//        Item coke = new Item("drink", "coke", 1.50);
+//        coke.printItem();
+//        coke.setSize("LARGE");
+//        coke.printItem();
+//
+//        Item avocado = new Item ("Topping", "avocado", 1.50);
+//        avocado.printItem();
 
+        Burger burger = new Burger("regular", 4.00);
+        burger.addToppings("BACON", "CHEESE", "MAYO");
+        burger.printItem();
+    }
 }
