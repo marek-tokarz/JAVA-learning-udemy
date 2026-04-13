@@ -124,5 +124,10 @@ public class Main {
         secondMeal.addBurgerToppings("LETTUCE", "CHEESE", "MAYO");
         secondMeal.setDrinkSize("SMALL");
         secondMeal.printItemizedList();
+
+        MealOrder deluxeMeal = new MealOrder("deluxe", "7-up", "chili");
+        deluxeMeal.addBurgerToppings("AVOCADO", "BEACON","LETTUCE", "CHEESE", "MAYO");
+        deluxeMeal.printItemizedList();
+
     }
 }
