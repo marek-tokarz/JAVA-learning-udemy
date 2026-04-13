@@ -18,7 +18,6 @@ public class Main {
 //        thePC.getComputerCase().pressPowerButton();
 
         thePC.powerUp();
- */
 
         // Smart Kitchen and kithcen appliances example
 
@@ -34,6 +33,17 @@ public class Main {
 
         kitchen.setKitchenState(true,false,true);
         kitchen.doKitchenWork();
+ */
+      Player player = new Player();
+      player.name = "Tim";
+      player.health = 20;
+      player.weapon = "Sword";
 
+      int damage = 10;
+      player.loseHealth(damage);
+      System.out.println("Remaining health = " + player.healthRemaining());
+      // player.health = 200 // setting a health without a proper method - outside the methods - BAD DESIGN
+      player.loseHealth(11);
+      System.out.println("Remaining health = " + player.healthRemaining());
     }
 }
