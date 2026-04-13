@@ -1,5 +1,7 @@
 package composition_encapsulation_polymorphism;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -48,7 +50,7 @@ public class Main {
 
         EnhancedPlayer tim = new EnhancedPlayer("Tim", 200, "Sword");
         System.out.println("Inital health is " + tim.healthRemaining());
- */
+
         Printer printer = new Printer(50,true);
         System.out.println("Initial page count = " + printer.getPagesPrinted());
 
@@ -57,5 +59,28 @@ public class Main {
 
         pagesPrinted = printer.printPages(10);
         System.out.printf("Current Job Pages: %d, Printer Total: %d %n", pagesPrinted, printer.getPagesPrinted());
+
+        Movie theMovie1 = new Movie("Star Trek");
+        theMovie1.watchMovie();
+
+        Movie theAdventureMovie = new Adventure("Star Wars");
+        theAdventureMovie.watchMovie();
+
+        Movie theMovie2 = Movie.getMovie("Science", "Star Wars 2");
+        theMovie2.watchMovie();
+ */
+        Scanner s = new Scanner(System.in);
+        while(true) {
+            System.out.print("Enter Type (A for Adventure, C for Comedy, " +
+                    "S for Science Fiction, or Q to quit): ");
+            String type = s.nextLine();
+            if("Qq".contains(type)) {
+                break;
+            }
+            System.out.print("Enter Movie Title: ");
+            String title = s.nextLine();
+            Movie movie = Movie.getMovie(type,title);
+            movie.watchMovie();
+        }
     }
 }
