@@ -1,3 +1,5 @@
+package composition_encapsulation_polymorphism;
+
 public class Product {
 
     private String model;
