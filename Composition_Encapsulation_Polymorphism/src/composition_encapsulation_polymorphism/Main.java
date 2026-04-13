@@ -18,7 +18,22 @@ public class Main {
 //        thePC.getComputerCase().pressPowerButton();
 
         thePC.powerUp();
-*/
+ */
+
+        // Smart Kitchen and kithcen appliances example
+
+        SmartKitchen kitchen = new SmartKitchen();
+
+//        kitchen.getDishWasher().setHasWorkToDo(true);
+//        kitchen.getIceBox().setHasWorkToDo(true);
+//        kitchen.getBrewMaster().setHasWorkToDo(true);
+//
+//        kitchen.getDishWasher().doDishes();
+//        kitchen.getIceBox().orderFood();
+//        kitchen.getBrewMaster().brewCoffe();
+
+        kitchen.setKitchenState(true,false,true);
+        kitchen.doKitchenWork();
 
     }
 }
