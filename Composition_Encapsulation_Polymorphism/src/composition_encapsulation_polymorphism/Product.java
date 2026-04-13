@@ -51,7 +51,7 @@ class Motherboard extends Product {
         this.bios = bios;
     }
 
-    public void loradProgram(String programName) {
+    public void loadProgram(String programName) {
         System.out.println("Program " + programName + " is now loading...");
     }
 }
