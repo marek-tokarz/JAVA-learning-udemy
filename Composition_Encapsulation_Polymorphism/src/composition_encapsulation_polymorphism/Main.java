@@ -68,7 +68,7 @@ public class Main {
 
         Movie theMovie2 = Movie.getMovie("Science", "Star Wars 2");
         theMovie2.watchMovie();
- */
+
         Scanner s = new Scanner(System.in);
         while(true) {
             System.out.print("Enter Type (A for Adventure, C for Comedy, " +
@@ -82,5 +82,21 @@ public class Main {
             Movie movie = Movie.getMovie(type,title);
             movie.watchMovie();
         }
+    */
+
+    Car car = new Car("2022 Blue Ferrari 296 GTS");
+    runRace(car);
+
+    Car ferrari = new GasPoweredCar("2022 Blue Ferrari 296 GTS",
+            15.4, 6);
+
+    runRace(ferrari);
+
     }
+
+    public static void runRace(Car car) {
+        car.startEngine();
+        car.drive();
+    }
+
 }
